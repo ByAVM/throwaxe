@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+#game {
+    position: relative;
+}
+#canvas-container {
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.messages-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    font-family: Arial;
+    font-size: 0.75rem;
+    color: #353535;
+    background-color: rgba(250, 250, 250, 0.514);
+}
+
+.messages-container-message {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.messages-container-message + .messages-container-message {
+    border-top: 1px solid #505050;
+}
+
+.message-time {
+    color: #505050;
+    font-size: 0.65rem;
+}
+.game-interface {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.skins-view {
+    height: 250px;
+    display: inline-block;
+    margin: 0 0.15rem;
+}
+
+.hidden-scroll {
+    overflow: hidden;
+}
+
+.skin-select-item label {
+    display: block;
+    cursor: pointer;
+    padding: 0.15rem;
+    border-radius: 5px;
+    border: 2px solid #646464;
+    margin-bottom: 0.2rem;
+}
+
+.skin-select-item input[type="radio"]:checked ~ label {
+    border-color: #2667e0;
+}
+
+.skin-select-item input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+#auth {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#auth form {
+    background-color: #eaeaea;
+    border-radius: 4px;
+    padding: 1rem;
+}
+#auth .inp {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+#auth .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#auth > * {
+    z-index: 1;
+}
+#auth::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.5);
+    z-index: 0;
+}
+
+.die {
+    color: #2667e0;
+}
+
+.killer {
+    color: #9b2f2f;
+}
+
+@keyframes pullup {
+    0% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    25% {
+        transform: scale(0.2) rotateZ(0deg);
+    }
+
+    50% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(180deg);
+    }
+}
+.skins-selector {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.skins-selector.loading::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: #2667e0;
+    animation: pullup 1.7s infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skins-selector.loading .skins-view {
+    display: none;
+}

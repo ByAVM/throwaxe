@@ -1,0 +1,46 @@
+{
+    "environment": {
+        "files": [
+            {
+                "type": "image",
+                "key": "grass",
+                "url": "resources/environment/grass.png"
+            },
+            {
+                "type": "image",
+                "key": "grass-2",
+                "url": "resources/environment/grass-2.png"
+            },
+            {
+                "type": "image",
+                "key": "gush",
+                "url": "resources/environment/gush.png"
+            },
+            {
+                "type": "image",
+                "key": "stone",
+                "url": "resources/environment/stone.png"
+            },
+            {
+                "type": "image",
+                "key": "buff",
+                "url": "resources/environment/buff.png"
+            },
+            {
+                "type": "image",
+                "key": "heal-buff",
+                "url": "resources/environment/heal-buff.png"
+            },
+            {
+                "type": "image",
+                "key": "speed-buff",
+                "url": "resources/environment/speed-buff.png"
+            },
+            {
+                "type": "image",
+                "key": "cooldown-buff",
+                "url": "resources/environment/cooldown-buff.png"
+            }
+        ]
+    }
+}

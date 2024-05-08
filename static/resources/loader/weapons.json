@@ -1,0 +1,22 @@
+{
+    "weapons": {
+        "files": [
+            {
+                "type": "image",
+                "key": "TAxe",
+                "url": "resources/weapon/TAxe.png",
+                "default": true
+            },
+            {
+                "type": "image",
+                "key": "Skyth",
+                "url": "resources/weapon/Skyth.png"
+            },
+            {
+                "type": "image",
+                "key": "DoubleAxe",
+                "url": "resources/weapon/DoubleAxe.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "players": {
+        "files": [
+            {
+                "type": "image",
+                "key": "TWiking",
+                "url": "resources/player/TWiking.png",
+                "default": true
+            },
+            {
+                "type": "image",
+                "key": "TWikingRed",
+                "url": "resources/player/TWikingRed.png"
+            },
+            {
+                "type": "image",
+                "key": "Boking",
+                "url": "resources/player/Boking.png"
+            },
+            {
+                "type": "image",
+                "key": "Leo",
+                "url": "resources/player/Leo.png"
+            }
+        ]
+    }
+}
